@@ -1,16 +1,118 @@
-#videos{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:2em;
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
-.video-player{
-    background-color: black;
-    width: 100%;
-    height: 300px;
+#arena {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    top: 25px;
+    left: 4px;
+    gap : 80px;
     
 }
 
-#user-2{
-    display:none;
+.outline {
+    position: relative;
+    width: 615px;
+    height: 410px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.outline-blue {
+    border: 10px solid #48A639; /* Blue outline */
+}
+
+.outline-red {
+    border: 10px solid #DA2222; /* Red outline */
+}
+.video {
+    background-color: black;
+    height:410px;
+    width:615px;
+    box-sizing: border-box;
+}
+
+.timer {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.mascot{
+    position:absolute;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+    left:0px;
+    bottom:0px;
+    height:100px;
+    width:100px;
+}
+
+.mascot-polling{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 50%;
+    left:0px;
+    height:100px;
+    width:100px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  .container-chat{
+    position: absolute;
+    background-color: #D9D9D9;
+    height: 300px;
+    width:978px;
+    right : 40px;
+    bottom: 40px;
+    border-radius: 2rem;
+    border: 10px solid black;
+  }
+
+  .Container-Polling{
+    padding-top: 50px;
+    display:flex;
+    flex-direction: column;
+    gap:150px;
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+    border-radius: 2rem;
+    border: 10px solid black;
+    margin-top: auto;
+    height: 350px;
+    width: 600px;
+  }
+.timer{
+    color:#DA2222;
+    font-family: "Just Another Hand", cursive;
+    padding-top: 20px;
+}
+.timer-text{
+    font-size: 60px;
 }
