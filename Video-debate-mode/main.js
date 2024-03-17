@@ -67,8 +67,11 @@ let handleMessageFromPeer = async(message, MemberId) => {
 }
 
 let handleUserJoined = async (MemberId) => {
+    
     console.log('A new user joined the channel: ', MemberId)
+
     createOffer(MemberId)
+    
 }
 
 let createPeerConnection = async (MemberId) => {
@@ -98,6 +101,7 @@ let createPeerConnection = async (MemberId) => {
             client.sendMessageToPeer({text:JSON.stringify({'type':'candidate', 'candidate': event.candidate})}, MemberId)
         }
     }
+    runTimer();
 }
  
 let createOffer = async(MemberId) => {
@@ -132,5 +136,46 @@ let leaveChannel = async ()=>{
 }
 
 window.addEventListener('beforeunload', leaveChannel)
+
+// var time = 30;
+let interval;
+// var currTurn=1;
+async function runTimer() {
+    document.getElementById('which-player').innerHTML = "Player 1"
+    await startTimer(30);
+    document.getElementById('Timer').innerHTML = ("Times Up");
+    await delay(5000); // Wait for 5 seconds
+    document.getElementById('which-player').innerHTML = "Player 2"
+    await startTimer(30);
+    document.getElementById('Timer').innerHTML = ("Times Up");
+    await delay(5000); // Wait for 5 seconds
+    document.getElementById('which-player').innerHTML = "Time for all out war"
+    await startTimer(120);
+}
+
+async function startTimer(totalSeconds) {
+    let remainingTime = totalSeconds;
+
+    while (remainingTime >= 0) {
+        document.getElementById('Timer').innerHTML = (formatTime(remainingTime));
+        await delay(1000); // Wait for 1 second
+        remainingTime--;
+    }
+}
+
+function formatTime(seconds) {
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, "0")}:${remainingSeconds.toString().padStart(2, "0")}`;
+}
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Start the timer
+
+
+
 
 init()
