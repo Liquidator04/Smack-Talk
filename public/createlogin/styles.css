@@ -1,0 +1,432 @@
+.login-inside-child {
+    width: 31.563rem;
+    height: 39.188rem;
+    position: relative;
+    border-radius: var(--br-12xl);
+    background-color: var(--color-gray);
+    box-shadow: 37.7px -37.7px 37.73px rgba(194, 194, 194, 0.16) inset,
+      -37.7px 37.7px 37.73px rgba(255, 255, 255, 0.16) inset;
+    backdrop-filter: blur(75.47px);
+    display: none;
+    max-width: 100%;
+  }
+  .login {
+    margin: 0;
+    height: 5.563rem;
+    width: 8.438rem;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    flex-shrink: 0;
+    z-index: 1;
+  }
+  .login-label,
+  .login-wrapper,
+  .password-label {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+  .login-wrapper {
+    width: 21.313rem;
+    justify-content: center;
+    padding: 0 0 0.875rem;
+    max-width: 100%;
+  }
+  .login-label,
+  .password-label {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: var(--color-gainsboro-100);
+    align-self: stretch;
+    height: 3.063rem;
+    border-radius: var(--br-8xs);
+    justify-content: flex-start;
+    font-family: var(--font-amaranth);
+    font-weight: 700;
+    font-size: var(--font-size-smi);
+    color: var(--color-dimgray);
+    min-width: 12.75rem;
+  }
+  .login-label {
+    padding: var(--padding-smi) 1.375rem var(--padding-2xl);
+  }
+  .password-label {
+    padding: var(--padding-smi) var(--padding-4xl) var(--padding-2xl);
+  }
+  .google-child {
+    height: 2.375rem;
+    width: 4.813rem;
+    position: relative;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-white);
+    display: none;
+  }
+  .google-removebg-preview-1-icon {
+    height: 2.5rem;
+    width: 3.175rem;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .google,
+  .logo-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .google {
+    cursor: pointer;
+    border: 1px solid #aeaeae;
+    padding: 0 0.75rem;
+    background-color: var(--color-white);
+    align-self: stretch;
+    height: 2.375rem;
+    border-radius: var(--br-7xs);
+    flex-direction: row;
+    z-index: 1;
+  }
+  .logo-container {
+    width: 4.813rem;
+    flex-direction: column;
+    padding: var(--padding-base) 0 0;
+  }
+  .facebook-child {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    border-radius: var(--br-7xs);
+    background-color: #1578f5;
+    width: 4.813rem;
+    height: 2.375rem;
+  }
+  .facebook-removebg-preview-1-icon {
+    position: absolute;
+    width: calc(100% - 2.6px);
+    top: 0;
+    right: 0.163rem;
+    left: 0;
+    max-width: 100%;
+    overflow: hidden;
+    height: 4.375rem;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .apple-child,
+  .facebook {
+    width: 4.813rem;
+    position: relative;
+  }
+  .facebook {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    height: 4.375rem;
+    z-index: 1;
+  }
+  .apple-child {
+    height: 2.375rem;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-black);
+    display: none;
+  }
+  .apple-removebg-preview-1-icon {
+    height: 2.5rem;
+    width: 2.663rem;
+    position: relative;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .apple,
+  .logo-container1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .apple {
+    height: 2.5rem;
+    border-radius: var(--br-7xs);
+    background-color: var(--color-black);
+    flex-direction: row;
+    padding: 0 var(--padding-base) 0 1.125rem;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .apple:hover{
+    cursor: pointer;
+  }
+  .logo-container1 {
+    flex-direction: column;
+    padding: 0.938rem 0 0;
+  }
+  .xbox-preview {
+    position: absolute;
+    top: 0.375rem;
+    left: 0.313rem;
+    border-radius: var(--br-7xs);
+    background-color: #117a0b;
+    width: 4.813rem;
+    height: 2.375rem;
+  }
+  .xbox-removebg-preview-1-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5.55rem;
+    height: 3.125rem;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .xbox {
+    cursor: pointer;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    align-self: stretch;
+    height: 3.125rem;
+    position: relative;
+    z-index: 1;
+  }
+  .xbox-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0.625rem 0 0;
+    box-sizing: border-box;
+    min-width: 3.625rem;
+  }
+  .login-label-parent,
+  .logo-container-parent,
+  .password-label-parent {
+    align-self: stretch;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .logo-container-parent {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.438rem;
+  }
+  .login-label-parent,
+  .password-label-parent {
+    flex-direction: column;
+    gap: 1.188rem;
+  }
+  .login-label-parent {
+    gap: 1.5rem;
+  }
+  .loginbtn-child {
+    height: 2.875rem;
+    width: 6.438rem;
+    position: relative;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gainsboro-200);
+    display: none;
+  }
+  .loginbtn-item {
+    height: 1.381rem;
+    width: 2.313rem;
+    position: relative;
+    z-index: 1;
+  }
+  .login-button-container,
+  .loginbtn {
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .loginbtn {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-4xl) 2.063rem 0.056rem;
+    background-color: var(--color-gainsboro-200);
+    height: 2.875rem;
+    border-radius: var(--br-8xs);
+    justify-content: flex-start;
+    box-sizing: border-box;
+    z-index: 1;
+  }
+  .login-button-container {
+    align-self: stretch;
+    justify-content: center;
+    padding: 0 1.625rem 0 var(--padding-xl);
+  }
+  .frame-parent {
+    margin: 0;
+    width: 21.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-8xl);
+    max-width: 100%;
+  }
+  .create-account {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 400;
+    font-family: inherit;
+    display: inline-block;
+    min-width: 7.938rem;
+    z-index: 1;
+    background-color: transparent;
+    color: white;
+    border:none;
+  }
+  .create-account:hover{
+    cursor: pointer;
+  }
+  .login-inside,
+  .whats-app-image-container {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .whats-app-image-container {
+    width: 21.313rem;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 0.375rem 0 0;
+    font-size: 1.25rem;
+    font-family: var(--font-jockey-one);
+  }
+  .login-inside {
+    width: 31.563rem;
+    border-radius: var(--br-12xl);
+    background-color: var(--color-gray);
+    box-shadow: 37.7px -37.7px 37.73px rgba(194, 194, 194, 0.16) inset,
+      -37.7px 37.7px 37.73px rgba(255, 255, 255, 0.16) inset;
+    backdrop-filter: blur(75.47px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 4rem var(--padding-xl) 5.938rem;
+    gap: var(--gap-8xl);
+    z-index: 1;
+  }
+  .whatsapp-image-2024-03-17-at-1 {
+    position: absolute;
+    top: -1.125rem;
+    left: 0;
+    width: 94.5rem;
+    height: 62.5rem;
+    object-fit: cover;
+  }
+  .whatsapp-image-2024-03-17-at-2-icon {
+    position: absolute;
+    top: 2.188rem;
+    left: 32.188rem;
+    width: 30.188rem;
+    height: 10.5rem;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .whatsapp-image-2024-03-17-at-1-parent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .login-page {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-black);
+    border: 1px solid #a5a5a5;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 14.813rem 30.875rem 7.375rem;
+    letter-spacing: normal;
+    text-align: left;
+    font-size: 4rem;
+    color: var(--color-white);
+    font-family: var(--font-koulen);
+  }
+  @media screen and (max-width: 750px) {
+    .login {
+      font-size: 3.188rem;
+    }
+    .login-page {
+      padding-left: var(--padding-228xl);
+      padding-right: var(--padding-228xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .login-inside {
+      padding-top: 2.625rem;
+      padding-bottom: 3.875rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .login {
+      font-size: 2.375rem;
+    }
+    .create-account {
+      font-size: 1rem;
+    }
+    .login-page {
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+      height: 100vh;
+    }
+  }
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-jockey-one: "Jockey One";
+    --font-amaranth: Amaranth;
+    --font-koulen: Koulen;
+  
+    /* font sizes */
+    --font-size-smi: 0.813rem;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-gray: rgba(255, 255, 255, 0.16);
+    --color-white: #fff;
+    --color-gainsboro-100: #ddd;
+    --color-gainsboro-200: #d9d9d9;
+    --color-dimgray: #686868;
+  
+    /* Gaps */
+    --gap-8xl: 1.688rem;
+  
+    /* Paddings */
+    --padding-xl: 1.25rem;
+    --padding-228xl: 15.438rem;
+    --padding-4xl: 1.438rem;
+    --padding-base: 1rem;
+    --padding-smi: 0.813rem;
+    --padding-2xl: 1.313rem;
+  
+    /* Border radiuses */
+    --br-12xl: 31px;
+    --br-8xs: 5px;
+    --br-7xs: 6px;
+  }
