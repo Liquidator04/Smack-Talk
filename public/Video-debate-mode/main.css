@@ -1,0 +1,150 @@
+/* 
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+#arena {
+    position:absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 500px;
+    min-height: 400px;
+    z-index: -1;
+} */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+    box-sizing: border-box;
+    top: 0px;
+    left: 0px;
+    gap : 80px;
+    
+}
+
+.outline {
+    position: relative;
+    width: 615px;
+    height: 410px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.outline-blue {
+    border: 10px solid #48A639; /* Blue outline */
+}
+
+.outline-red {
+    border: 10px solid #DA2222; /* Red outline */
+}
+.video {
+    margin-top: 50px;
+    background-color: black;
+    height:250px;
+    width:415px;
+    box-sizing: border-box;
+}
+
+.timer {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.mascot{
+    position:absolute;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 50%;
+    left:0px;
+    bottom:0px;
+    height:100px;
+    width:100px;
+}
+
+.mascot-polling{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    border-radius: 50%;
+    left:0px;
+    height:100px;
+    width:100px;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  .container-chat{
+    position: absolute;
+    background-color: #D9D9D9;
+    height: 300px;
+    width:678px;
+    right : 40px;
+    bottom: 40px;
+    border-radius: 2rem;
+    border: 10px solid black;
+  }
+
+  .Container-Polling{
+    padding-top: 50px;
+    padding-top: 50px;
+    display:flex;
+    flex-direction: column;
+    gap:150px;
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
+    border-radius: 2rem;
+    border: 10px solid black;
+    margin-top: auto;
+    height: 300px;
+    width: 400px;
+  }
+.timer{
+    color:#DA2222;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: "Just Another Hand", cursive;
+    padding-top: 20px;
+}
+.timer-text{
+    font-size: 60px;
+}
