@@ -1,0 +1,259 @@
+.signup-inside-child {
+    width: 31.563rem;
+    height: 39.188rem;
+    position: relative;
+    border-radius: var(--br-12xl);
+    background-color: var(--color-gray-100);
+    box-shadow: 37.7px -37.7px 37.73px rgba(194, 194, 194, 0.1) inset,
+      -37.7px 37.7px 37.73px rgba(255, 255, 255, 0.1) inset;
+    backdrop-filter: blur(75.47px);
+    display: none;
+    max-width: 100%;
+  }
+  .create-account1 {
+    margin: 0;
+    height: 3.5rem;
+    position: relative;
+    font-size: 2.25rem;
+    font-weight: 400;
+    font-family: var(--font-koulen);
+    color: var(--color-white);
+    text-align: left;
+    display: inline-block;
+    z-index: 1;
+  }
+  .create-account-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 3.188rem;
+  }
+  .confirm-password,
+  .mail,
+  .mail-parent,
+  .password-section,
+  .username {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+  .confirm-password,
+  .mail,
+  .password-section,
+  .username {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background-color: var(--color-gainsboro-100);
+    align-self: stretch;
+    height: 3.063rem;
+    border-radius: var(--br-8xs);
+    flex-direction: row;
+    padding: var(--padding-smi) var(--padding-sm) var(--padding-2xl);
+    font-family: var(--font-amaranth);
+    font-weight: 700;
+    font-size: var(--font-size-smi);
+    color: var(--color-dimgray);
+    min-width: 11.938rem;
+    z-index: 1;
+  }
+  .mail-parent {
+    width: 19.875rem;
+    flex-direction: column;
+    padding: 0 0 1.5rem;
+    gap: var(--gap-5xl);
+  }
+  .loginbtn-inner {
+    height: 2.875rem;
+    width: 6.438rem;
+    position: relative;
+    border-radius: var(--br-8xs);
+    background-color: var(--color-gainsboro-200);
+    display: none;
+  }
+  .arrow-icon {
+    height: 1.381rem;
+    width: 2.313rem;
+    position: relative;
+    z-index: 1;
+  }
+  .loginbtn-wrapper,
+  .loginbtn1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .loginbtn1 {
+    cursor: pointer;
+    border: 0;
+    padding: var(--padding-4xl) var(--padding-14xl) 0.056rem;
+    background-color: var(--color-gainsboro-200);
+    height: 2.875rem;
+    border-radius: var(--br-8xs);
+    justify-content: flex-start;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-left:800px;
+    align-items:center;
+    align-self:center;
+    margin-bottom: 800px;
+
+  }
+  
+  .loginbtn-wrapper {
+    width: 19.938rem;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .signup-inside {
+    margin: 0;
+    align-self: stretch;
+    border-radius: var(--br-12xl);
+    background-color: var(--color-gray-100);
+    box-shadow: 37.7px -37.7px 37.73px rgba(194, 194, 194, 0.1) inset,
+      -37.7px 37.7px 37.73px rgba(255, 255, 255, 0.1) inset;
+    backdrop-filter: blur(75.47px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5.125rem var(--padding-xl) 6.438rem;
+    box-sizing: border-box;
+    gap: var(--gap-5xl);
+    max-width: 100%;
+    z-index: 1;
+  }
+  .whatsapp-image-2024-03-17-at-11 {
+    position: absolute;
+    top: -1.125rem;
+    left: 0;
+    width: 94.5rem;
+    height: 62.5rem;
+    object-fit: cover;
+  }
+  .whatsapp-image-2024-03-17-at-2-icon1 {
+    position: absolute;
+    top: 3.688rem;
+    left: 32.188rem;
+    width: 30.188rem;
+    height: 10.5rem;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .whatsapp-image-2024-03-17-at-1-group {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .signup {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-black);
+    border: 1px solid var(--color-darkgray-100);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 15.813rem 31.375rem 6.375rem 31.438rem;
+    letter-spacing: normal;
+  }
+  @media screen and (max-width: 750px) {
+    .create-account1 {
+      font-size: 1.813rem;
+    }
+    .signup {
+      padding-left: var(--padding-232xl);
+      padding-right: var(--padding-232xl);
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 675px) {
+    .signup-inside {
+      padding-top: 3.313rem;
+      padding-bottom: 4.188rem;
+      box-sizing: border-box;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .create-account1 {
+      font-size: 1.375rem;
+    }
+    .create-account-wrapper,
+    .signup {
+      padding-left: var(--padding-xl);
+      padding-right: var(--padding-xl);
+      box-sizing: border-box;
+    }
+  }
+  body {
+    margin: 0;
+    line-height: normal;
+  }
+  
+  :root {
+    /* fonts */
+    --font-jockey-one: "Jockey One";
+    --font-amaranth: Amaranth;
+    --font-koulen: Koulen;
+    --font-just-another-hand: "Just Another Hand";
+  
+    /* font sizes */
+    --font-size-xl: 1.25rem;
+    --font-size-base: 1rem;
+    --font-size-smi: 0.813rem;
+  
+    /* Colors */
+    --color-black: #000;
+    --color-darkgray-100: #a5a5a5;
+    --color-gray-100: rgba(255, 255, 255, 0.1);
+    --color-gray-200: rgba(255, 255, 255, 0.16);
+    --color-white: #fff;
+    --color-gainsboro-100: #ddd;
+    --color-gainsboro-200: #d9d9d9;
+    --color-dimgray: #686868;
+    --color-crimson: #da2222;
+    --color-forestgreen: #48a639;
+  
+    /* Gaps */
+    --gap-8xl: 1.688rem;
+    --gap-5xl: 1.5rem;
+    --gap-lgi: 1.188rem;
+    --gap-6xs: 0.438rem;
+  
+    /* Paddings */
+    --padding-99xl: 7.375rem;
+    --padding-xl: 1.25rem;
+    --padding-228xl: 15.438rem;
+    --padding-23xl: 2.625rem;
+    --padding-4xl: 1.438rem;
+    --padding-14xl: 2.063rem;
+    --padding-base: 1rem;
+    --padding-smi: 0.813rem;
+    --padding-2xl: 1.313rem;
+    --padding-sm: 0.875rem;
+    --padding-232xl: 15.688rem;
+    --padding-16xl: 2.188rem;
+    --padding-12xl: 1.938rem;
+    --padding-58xl: 4.813rem;
+    --padding-2xs: 0.688rem;
+    --padding-lgi: 1.188rem;
+    --padding-91xl: 6.875rem;
+  
+    /* Border radiuses */
+    --br-12xl: 31px;
+    --br-8xs: 5px;
+    --br-7xs: 6px;
+    --br-mini: 15px;
+  }

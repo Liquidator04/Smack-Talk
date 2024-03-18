@@ -1,0 +1,15 @@
+[
+  {
+    "_id": {
+      "$oid": "65f82f267f0b878e80ce31e0"
+    },
+    "option": "Option 1 "
+  },
+  {
+    "_id": {
+      "$oid": "65f82f267f0b878e80ce31e1"
+    },
+    "option": "Option 2"
+  }
+  
+]
